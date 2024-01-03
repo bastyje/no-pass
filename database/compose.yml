@@ -1,0 +1,28 @@
+services:
+  db:
+    container_name: no-pass-db
+    image: postgres
+    ports:
+      - '5432:5432'
+    expose:
+      - '5432'
+    environment:
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+    volumes:
+      - no-pass-data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+    networks:
+      net1:
+        ipv4_address: 192.168.255.2
+
+volumes:
+  no-pass-data:
+    driver: local
+
+networks:
+  net1:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.255.0/24
+          gateway: 192.168.255.1

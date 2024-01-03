@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  .font {
+    font-family: Assistant, sans-serif !important;
+
+    &--LARGE {
+      font-size: 31.25px !important;
+      font-style: normal !important;
+      font-weight: 700 !important;
+      line-height: normal !important;
+    }
+
+    &--HUGE {
+      font-size: 39.06px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+    }
+
+    &--big {
+      font-size: 20px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+    }
+
+    &--normal {
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+
+      &__bold {
+        font-weight: 700;
+      }
+    }
+
+
+    &--small {
+      font-size: 12.8px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+    }
+
+    &--tiny {
+      font-size: 8.19px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+    }
+  }
+}

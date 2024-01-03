@@ -1,0 +1,23 @@
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="header">
+      <h1 class="font--HUGE">Sign in to NoPass</h1>
+      <span class="font--normal">Use your Login ID and security key</span>
+    </div>
+    <np-text-input-with-inline-submit-button
+      id="loginId"
+      label="Login ID"
+      type="text"
+      buttonText="Sign in"
+      controlName="loginId"
+      style="min-width: 430px"
+      [parentForm]="loginForm"
+    />
+    <np-error *ngIf="errors && errors.length > 0" [errors]="errors" />
+    <nav>
+      <a class="font--normal__bold" [routerLink]="['/', 'register']">Create account</a>
+      <a class="font--normal" [routerLink]="['/', 'help']">Help</a>
+      <a class="font--normal" [routerLink]="['/', 'privacy']">Privacy</a>
+    </nav>
+  </form>
+</div>

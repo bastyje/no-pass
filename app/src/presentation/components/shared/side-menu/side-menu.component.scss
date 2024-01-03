@@ -1,0 +1,25 @@
+#sidebar {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: var(--primary-30);
+  border-right: 1px solid var(--primary-100);
+}
+
+menu {
+  border-right: 1px solid var(--primary-100);
+  display: flex;
+  gap: 19px;
+  flex-direction: column;
+  padding: 19px 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.opened-menu {
+  padding: 5px 14px;
+}
+
+li {
+  list-style: none;
+}

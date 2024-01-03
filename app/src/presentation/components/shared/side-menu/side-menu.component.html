@@ -1,0 +1,13 @@
+<div id="sidebar">
+  <menu>
+    <li *ngFor="let item of menuItems; index as i">
+      <np-side-menu-item (click)="select(item)" [icon]="item.icon" [selected]="selectedList[i]"/>
+    </li>
+  </menu>
+  <div class="opened-menu" *ngIf="selectedAny">
+    <div class="header font--big">
+      <ng-container *ngComponentOutlet="selected!.sidebarHeader; inputs: {name: selected?.name}"></ng-container>
+    </div>
+    <ng-container *ngComponentOutlet="selected!.openSidebarComponent" />
+  </div>
+</div>

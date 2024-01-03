@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+np-text-input {
+  flex-grow: 1;
+}

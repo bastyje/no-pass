@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+* {
+  font-family: Assistant, sans-serif;
+  color: var(--primary-100-text);
+}
+
+h {
+  &1, &2 {
+    margin: 0
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

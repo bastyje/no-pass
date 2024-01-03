@@ -1,0 +1,16 @@
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+div {
+  border: 2px solid var(--primary-100);
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 2px 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
